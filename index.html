@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="LOGO SOFTWARE.ico">
+    <title>MI PORTFOLIO</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Saraí</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#aptitudes" onclick="seleccionar()">APTITUDES</a></li>
+                    <li><a href="#certificados" onclick="seleccionar()">CERTIFICADOS</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="PÉREZ SÁNCHEZ ESMERALDA SARAI.jpg" alt="">
+            </div>
+            <h1>Saraí Pérez</h1>
+            <h2>Técnico en desarrollo de software</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100040167286867"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/saraiperez03ps"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/sarai.prz._/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/sara%C3%AD-p%C3%A9rez-639848317/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/saraiperez"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Saraí Pérez</span>
+                Soy una chica de 18 años de edad, Me gusta mucho la tecnología, y desde febrero de 2022 me dedico a estudiar desarrollo de software de forma autodidacta.
+                A lo largo de mi camino he realizado varios cursos, incluyendo desarrollo web, bases de datos, impresión 3D, edición de videos con Adobe Premiere,
+                y edición de audio con Adobe Audition. También me he interesado por la inteligencia artificial, especialmente trabajando con Python.
+                Siempre busco aprender y aplicar tecnologías modernas y útiles en el día a día. Mi objetivo es que las personas conozcan mi trabajo y
+                me permita crecer y desarrollarme profesionalmente en estas áreas, donde siento que puedo aportar mucho.
+            </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nombre: </strong>
+                            Esmeralda Saraí Pérez Sánchez
+                        </li>
+                        <li>
+                            <strong>Cumpleaños: </strong>
+                            22-01-2006
+                        </li>
+                        <li>
+                            <strong>Teléfono: </strong>
+                            +503 7958 7643
+                        </li>
+                        <li>
+                            <strong>Email: </strong>
+                            saraiperez22ps@gmail.com
+                        <li>
+                            <strong>Dirección</strong>
+                            San salvador, Distrito de Santiago Texacuangos
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Habilidades técnicas -->
+                <div class="col">
+                    <h3>Habilidades técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL Workbench</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Linux</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidades profesionales -->
+                <div class="col">
+                    <h3>Habilidades profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad e Innovación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>96%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gestión de Proyectos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION APTITUDES-->
+    <section id="aptitudes" class="aptitudes">
+    <div class="contenido-seccion">
+        <h2>Aptitudes</h2>
+        <div class="fila"></div>
+        <p>
+            Estas son las herramientas tecnologicas de las que tengo conocimientos
+        </p>
+        <div class="aptitudes">
+        <div class="tech-list">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Arduino_IDE_logo.svg/2048px-Arduino_IDE_logo.svg.png" class="tech" alt="Arduino_IDE_logo">
+            <img src="https://cdn-icons-png.flaticon.com/256/5968/5968520.png" class="tech" alt="Photoshop">
+            <img src="https://ielectel.com/wp-content/uploads/2024/01/tinkercad-que-es-para-que-sirve-y-como-se-utiliza.webp" class="tech" alt="Tinkercad">
+            <img src="https://es.logodownload.org/wp-content/uploads/2019/10/adobe-premiere-pro-logo-4-11.png" class="tech" alt="Adobe premiere">
+
+        </div>
+        <div class="tech-list">
+            <img src="https://i.pcmag.com/imagery/reviews/05UdzTKT2tZumXb5z1KJYow-36.fit_scale.size_1028x578.v1706043458.png" class="tech" alt="Adobe Audition">
+            <img src="https://img.stackshare.io/service/7096/809746be-0b96-4af0-aa2f-5d1aeaa82658.png" class="tech" alt="Sql Server">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" class="tech" alt="NetBeans">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/3/32/Staruml_logo.png" class="tech" alt="Staruml">
+        </div>
+        <div class="tech-list">
+            <img src="https://store-images.s-microsoft.com/image/apps.21470.0d68eb0c-3794-4e04-bc3c-5ba740505a6b.aab178a6-9723-4bed-928b-5960ab04b7c1.cf9efa9f-8b1b-4da5-8ff5-557856986e2f.png" class="tech" alt="Lucidchart">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png" class="tech" alt="Visual Studio Code">
+            <img src="https://static-00.iconduck.com/assets.00/linux-icon-2048x2048-sy06t4un.png" class="tech" alt="Linux">
+            <img src="https://i.pinimg.com/736x/cb/b9/93/cbb993a9f7929507d21f41155e0d374c.jpg" class="tech" alt="GitHub">
+        </div>
+        <div class="tech-list">
+            <img src="https://lukodp.wordpress.com/wp-content/uploads/2013/03/673-phpmyadmin-logo-s.png" class="tech" alt="Phpmyadmin">
+            <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Android_Studio_icon_%282023%29.svg/2048px-Android_Studio_icon_%282023%29.svg.png class="tech" alt="Android Studio">
+            <img src="https://hotsechu.wordpress.com/wp-content/uploads/2021/03/mysqlworkbench_2.png" class="tech" alt="MySQL Workbench">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" class="tech" alt="Python">
+        </div>
+        <h2>Cursos realizados</h2>
+        <ul> 
+            <li>Curso de Introdución a la IA con python 👉 <a href="https://www.domestika.org/es/courses/5239-introduccion-a-la-ia-con-python" target="_blank">Ver</a></li>
+            <li>Curso de Robótica Con Arduino</li>
+            <li>Curso de Produción de video en adobe Premiere CC</li>
+            <li>Curso de Introducción al desarrollo web</li>
+            <li>Curso de GIT & GITHUB</li>
+            <li>Curso de Impresión 3D</li>
+            <li>Curso de linux entorno de desarrollo</li>
+        </ul>
+    </section>
+
+    <!-- SECCION CERTIFICADOS -->
+    <section id="certificados" class="certificados">
+        <div class="contenido-seccion">
+            <h2>Certificados</h2>
+    
+    <!-- Botón que te lleva a los certificados de 1° Año -->
+    <div class="centrado">
+        <button id="toggleCertificadosBtn" class="btn" onclick="toggleCertificados()">Ver certificados de 1° Año BTV en Desarrollo de Software</button>
+    </div>
+    
+    <!-- Galería de certificados de 1° Año (inicialmente oculta) -->
+    <div class="galeria" id="certificados-1ano" style="display: none;">
+        <div class="proyecto">
+            <img src="Diploma1.jpeg" alt="">
+            <div class="overlay">
+                <h3>Light bot</h3>
+                <p>Certificado</p>
+            </div>
+        </div>
+        <div class="proyecto">
+            <img src="Diploma2.jpeg" alt="">
+            <div class="overlay">
+                <h3>Edición de video en adobe premiere</h3>
+                <p>Certificado</p>
+            </div>
+        </div>
+        <div class="proyecto">
+            <img src="Diploma3.jpeg" alt="">
+            <div class="overlay">
+                <h3>Participación lV Feria Cimat El Salvador</h3>
+                <p>Certificado</p>
+            </div>
+        </div>
+        <div class="proyecto">
+            <img src="Diploma4.jpeg" alt="">
+            <div class="overlay">
+                <h3>Robótica</h3>
+                <p>Certificado</p>
+            </div>
+        </div>
+        <div class="proyecto">
+            <img src="Diploma5.jpeg" alt="">
+            <div class="overlay">
+                <h3>Participación lV Feria Cimat El Salvador Con el proyecto Bot-CAM ,2022</h3>
+                <p>Certificado</p>
+            </div>
+        </div>
+        <div class="proyecto">
+            <img src="Diploma6.jpeg" alt="">
+            <div class="overlay">
+                <h3>1° Lugar en el área de tecnología Feria IV Cimat</h3>
+                <p>Reconomiento</p>
+            </div>
+        </div>
+        <div class="proyecto">
+            <img src="Diploma7.jpeg" alt="">
+            <div class="overlay">
+                <h3>Desarrollo web</h3>
+                <p>Certificado</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Script para mostrar/ocultar los certificados -->
+    <script>
+        function toggleCertificados() {
+            var certificados = document.getElementById("certificados-1ano");
+            var button = document.getElementById("toggleCertificadosBtn");
+    
+            // Mostrar u ocultar los certificados
+            if (certificados.style.display === "none") {
+                certificados.style.display = "flex"; // Mostrar los certificados
+                button.innerHTML = "Ocultar certificados de 1° Año"; // Cambiar el texto del botón
+            } else {
+                certificados.style.display = "none"; // Ocultar los certificados
+                button.innerHTML = "Ver certificados de 1° Año"; // Restaurar el texto del botón
+            }
+        }
+    </script>
+
+<!-- Botón que te lleva a los certificados de 3° Año --> 
+<div class="centrado">
+    <button id="toggleCertificados3AnoBtn" class="btn" onclick="toggleCertificados3Ano()">Ver certificados de 3° Año BTV en Desarrollo de Software</button>
+</div>
+
+<!-- Galería de certificados de 3° Año (inicialmente oculta) -->
+<div class="galeria" id="certificados-3ano" style="display: none;">
+    <div class="proyecto">
+        <img src="Diploma8.jpg" alt="">
+        <div class="overlay">
+            <h3>Git y GitHub</h3>
+            <p>Certificado</p>
+        </div>
+    </div>
+    <div class="proyecto">
+        <img src="Diploma9.jpg" alt="">
+        <div class="overlay">
+            <h3>Impresión 3D</h3>
+            <p>Certificado</p>
+        </div>
+    </div>
+    <div class="proyecto">
+        <img src="Diploma10.jpg" alt="">
+        <div class="overlay">
+            <h3>Linux</h3>
+            <p>Certificado</p>
+        </div>
+    </div>
+    <div class="proyecto">
+        <img src="Diploma11.jpg" alt="">
+        <div class="overlay">
+            <h3>Inteligencia artificial</h3>
+            <p>Certificado</p>
+        </div>
+    </div>
+    <div class="proyecto">
+        <img src="Diploma12.jpeg" alt="">
+        <div class="overlay">
+            <h3>1° Lugar en área de tecnología Feria VI Cimat</h3>
+            <p>Reconomiento</p>
+        </div>
+    </div>
+</div>
+
+    <!-- Script para mostrar/ocultar los certificados -->
+    <script>
+        function toggleCertificados3Ano() {
+            var certificados = document.getElementById("certificados-3ano");
+            var button = document.getElementById("toggleCertificados3AnoBtn");
+    
+            // Mostrar u ocultar los certificados
+            if (certificados.style.display === "none") {
+                certificados.style.display = "flex"; // Mostrar los certificados
+                button.innerHTML = "Ocultar certificados de 3° Año"; // Cambiar el texto del botón
+            } else {
+                certificados.style.display = "none"; // Ocultar los certificados
+                button.innerHTML = "Ver certificados de 3° Año"; // Restaurar el texto del botón
+            }
+        }
+    </script>
+
+    <!-- SECCION PROYECTOS-->
+    <section id="proyectos" class="proyectos">
+        <div class="contenido-seccion">
+            <h2>Proyectos</h2>
+            <div class="fila"></div>
+    <section class="tres">
+        
+	<center>
+        <div class="proyectos">
+            <div class="card">
+                <h3>Proyecto de Primer Año</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/5xxRH3Z7MnA" title="Video 1 - Proyecto BOT-CAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>
+                    Este proyecto se centra en mejorar la seguridad del hogar mediante un sistema de cámaras para monitorear el entorno y alertar a los usuarios sobre posibles intrusos o situaciones sospechosas. El video muestra cómo el prototipo  captura imágenes en tiempo real, transmitiendo en una dirección IP.
+                </p>
+                <a href="https://www.youtube.com/embed/5xxRH3Z7MnA" target="_blank">Ver en YouTube</a>
+            </div>
+            
+            <div class="card">
+                <h3>Proyecto de Segundo Año</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Fd7tXvtCj3U" title="Video 2 - Proyecto Cerradura con huella digital" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>
+                    Este proyecto implementa una cerradura inteligente que utiliza tecnología de reconocimiento de huellas digitales .En el video, se explica cómo el sistema almacena las huellas digitales de los usuarios, ofreciendo un método seguro y eficiente para proteger sus hogares o negocios.
+                </p>
+                <a href="https://www.youtube.com/watch?v=Fd7tXvtCj3U" target="_blank">Ver en YouTube</a>
+            </div>
+
+            <div class="card">
+                <h3>Proyecto de Tercer Año</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/KnQYpCYpncM" title="Video 3 - Proyecto Pneumoscan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>
+                    Es un proyecto enfocado en el área de la salud, específicamente diseñado para la detección de neumonía. Utiliza tecnologías de análisis de imágenes médicas y aprendizaje de deep learning para identificar signos de la enfermedad en radiografías de tórax. En el video, se muestra cómo la herramienta ayuda a médicos y profesionales de la salud a diagnosticar la neumonía de manera rápida y precisa, mejorando así la atención al paciente.
+                </p>
+                <a href="https://youtu.be/KnQYpCYpncM" target="_blank">Ver en YouTube</a>
+            </div>
+        </div>
+
+    
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+    
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100040167286867"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com/saraiperez03ps"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/sarai.prz._/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sara%C3%AD-p%C3%A9rez-639848317/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/saraiperez"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
